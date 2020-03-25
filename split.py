@@ -7,9 +7,10 @@ l=[]
 for i in file:
 	l.append(i)
 
-
+#storing all the names of folders(classes) in the list x
 x=os.listdir('images')
 
+#creating two folders 'train' and 'val'
 os.mkdir('train')
 os.mkdir('val')
 
@@ -25,8 +26,6 @@ for i in x:
 	am=os.listdir('images/'+i)
 	
 	z.append(am)
-#print(x[0])
-#print('images/'+x[0]+'/'+z[0][0])
 
 c=0
 for i in z:
